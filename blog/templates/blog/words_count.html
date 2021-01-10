@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<h1>WORD COUNT</h1>
+
+<form action="{% url 'count' %}">
+	<textarea cols="40" rows="10" name="fulltext"></textarea>
+	<br />
+	<input type="submit" value="Count!" />
+</form>
+{% endblock content %}
+		
+
+
+
+

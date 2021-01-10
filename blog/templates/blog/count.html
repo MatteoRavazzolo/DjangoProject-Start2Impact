@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<h1>WORD COUNT OF "{{ fulltext }}":</h1>
+
+{% for name,count in word_list %}
+{% if fulltext == name %}
+	<h1>{{ count }}</h1>
+{% endif %}
+{% endfor %}
+{% endblock content %}
